@@ -30,7 +30,7 @@ const CreateBlog = () => {
         formData.append("blogImage", blogImage);
         try {
             const { data } = await axios.post(
-                "http://localhost:4001/api/blogs/create",
+                "https://blogs-application-tjfe.onrender.com/api/blogs/create",
                 formData,
                 {
                     withCredentials: true,

@@ -10,7 +10,7 @@ const Creaters = () => {
     useEffect(() => {
         const featchCreaters = async () => {
             try {
-                const { data } = await axios.get('http://localhost:4001/api/users/admins', {
+                const { data } = await axios.get('https://blogs-application-tjfe.onrender.com/api/users/admins', {
                     withCredentials: true
                 });
                 setCreaters(data);

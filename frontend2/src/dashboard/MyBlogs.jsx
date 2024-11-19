@@ -11,7 +11,7 @@ const MyBlogs = () => {
 
         const factchBlogs = async () => {
             try {
-                const { data } = await axios.get("http://localhost:4001/api/blogs/my-blogs", { withCredentials: true });
+                const { data } = await axios.get("https://blogs-application-tjfe.onrender.com/api/blogs/my-blogs", { withCredentials: true });
 
                 console.log(data);
                 setMyBlogs(data);

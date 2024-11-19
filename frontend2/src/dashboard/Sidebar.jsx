@@ -25,7 +25,7 @@ const Sidebar = ({ setComponate }) => {
     const handleLogout = async (e) => {
         e.preventDefault()
         try {
-            const { data } = await axios.get("http://localhost:4001/api/users/logout", { withCredentials: true });
+            const { data } = await axios.get("https://blogs-application-tjfe.onrender.com/api/users/logout", { withCredentials: true });
             setIsAuthenticated(false);
 
             toast.success("Logged out successfully")

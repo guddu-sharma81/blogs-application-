@@ -12,7 +12,7 @@ const DetailsPage = () => {
         const fetchBlog = async () => {
             try {
                 const { data } = await axios.get(
-                    `http://localhost:4001/api/blogs/one-blog/${id}`,
+                    `https://blogs-application-tjfe.onrender.com/api/blogs/one-blog/${id}`,
                     {
                         withCredentials: true,
                         headers: {
